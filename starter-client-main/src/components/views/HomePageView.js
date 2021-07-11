@@ -16,17 +16,17 @@ const useStyles = makeStyles(theme => ({
     fontType: 'bold',
     fontFamily: 'Courier, sans-serif', 
     fontSize: '35px', 
-    color: '#CDDC39'
+    color: '#f8b195'
   },
   appBar:{
-    backgroundColor: '#11153e',
+    backgroundColor: '#6c5b7b',
     shadows: ['none'],
   },
   greeting:{
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: 'white',
-    width: "50%",
+    backgroundColor: '#7a6b88',
+    width: "100%",
     margin: "auto",
   },
   links:{
@@ -42,7 +42,7 @@ const HomePageView = () => {
       <AppBar position="static" elevation={0} className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" className={classes.title} color="inherit" >
-            CRUD App
+            City Tech
           </Typography>
 
           <Link className={classes.links} to={'/campuses'} >

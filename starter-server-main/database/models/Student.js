@@ -5,28 +5,29 @@ const Student = db.define("student", {
 
   firstname: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: false,
+    defaultValue: 'John'
   },
 
   lastname: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: false,
+    defaultValue: 'Doe'
   },
 
   email: {
     type: Sequelize.STRING,
     allowNull: false,
-    defaultValue: "N/A",
-    isEmail: true,
+    defaultValue: "JohnDoe@johndoe.com",
+    validate: {
+      isEmail: true,
+    }
   },
 
-  imgurl: {
+  imgUrl: {
     type: Sequelize.STRING,
     defaultValue:
       "https://discordia.me/uploads/easter-eggs/banana.png",
-    validate: {
-      isUrl: true,
-    },
   },
 
   gpa: {
