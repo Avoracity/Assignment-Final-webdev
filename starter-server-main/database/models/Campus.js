@@ -10,7 +10,20 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
-  }
+  },
+  
+  address: {
+    type: Sequelize.STRING,
+  },
+
+  imgurl: {
+    type: Sequelize.STRING,
+    defaultValue:
+      "https://discordia.me/uploads/easter-eggs/banana.png",
+    validate: {
+      isUrl: true,
+    },
+  },
 
 });
 
