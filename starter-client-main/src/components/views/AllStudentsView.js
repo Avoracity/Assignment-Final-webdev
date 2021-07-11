@@ -133,11 +133,15 @@ class AllStudentsView extends Component {
           </AppBar>
         </div>
 
-                <div>
-                    <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif' }}>All Students</h1>
-                    <Button onClick={this.startSAdd} variant="contained">
+        <div>
+          <AppBar position="static" elevation={0} style={{ backgroundColor: '#6c5b77', shadows: 'none' }}>
+
+          <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif', color: '#f8b195' }}>All Students</h1>
+  
+                    <Button onClick={this.startSAdd}>
                         Add Student
                     </Button>
+                </AppBar>
                 </div>
                 <div>
                     {this.props.allStudents.map((student) => (
