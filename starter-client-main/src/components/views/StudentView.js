@@ -23,22 +23,22 @@ const StudentsView = (props) => {
     return (
         <div>
             <div>
-                <AppBar position="static" elevation={0} style={{ backgroundColor: '#11153e', shadows: 'none' }}>
+                <AppBar position="static" elevation={0} style={{ backgroundColor: '#6c5b7b', shadows: 'none' }}>
                     <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <Link to={'/'} style={{ textDecoration: 'none' }} >
-                            <Typography variant="h6" style={{ textAlign: 'left', fontType: 'bold', fontFamily: 'Courier, sans-serif', fontSize: '35px', color: "#CDDC39" }}>
+                            <Typography variant="h6" style={{ textAlign: 'left', fontType: 'bold', fontFamily: 'Courier, sans-serif', fontSize: '35px', color: "#f8b195" }}>
                                 Home
                             </Typography>
                         </Link>
                         <div>
                             <Link to={'/campuses'} style={{ textDecoration: 'none' }} >
-                                <Button color="primary" style={{ marginRight: '10px' }}>
-                                    All Campuses
+                                <Button variant ="outlined" color="warning" style={{ marginRight: '10px' }}>
+                                    <font color= "#f8b195">All Campuses</font>
                                 </Button>
                             </Link>
                             <Link to={'/students'} style={{ textDecoration: 'none' }} >
-                                <Button color="primary">
-                                    All Students
+                                <Button variant="outlined" color="warning">
+                                <font color= "#f8b195">All Students</font>
                                 </Button>
                             </Link>
                         </div>

@@ -118,14 +118,13 @@ class AllStudentsView extends Component {
               
               <div>
                 <Link to={'/'} style={{ textDecoration: 'none' }} >
-                  <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-
-                    Home
+                  <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
+                  <font color= "#f8b195">Home</font>
                   </Button>
                 </Link>
                 <Link to={'/campuses'} style={{ textDecoration: 'none' }} >
-                <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-                    All Campus
+                <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
+                    <font color= "#f8b195">All Campus</font>
                   </Button>
                 </Link>
               </div>
@@ -133,11 +132,15 @@ class AllStudentsView extends Component {
           </AppBar>
         </div>
 
-                <div>
-                    <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif' }}>All Students</h1>
-                    <Button onClick={this.startSAdd} variant="contained">
-                        Add Student
+        <div>
+          <AppBar position="static" elevation={0} style={{ backgroundColor: '#6c5b77', shadows: 'none' }}>
+
+          <h1 style={{ marginTop: '3%', marginLeft: '43%', fontFamily: 'Courier, sans-serif', color: '#f8b195',  }}>All Students</h1>
+  
+                    <Button onClick={this.startSAdd}>
+                        <font color='#f8b195'>Add Student</font>
                     </Button>
+                </AppBar>
                 </div>
                 <div>
                     {this.props.allStudents.map((student) => (

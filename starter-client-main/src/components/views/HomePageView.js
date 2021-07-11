@@ -25,13 +25,16 @@ const useStyles = makeStyles(theme => ({
   greeting:{
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: '#7a6b88',
+    backgroundColor: '#6c5b77',
     width: "100%",
     margin: "auto",
   },
   links:{
     textDecoration: 'none',
-  }
+  },
+  imgcity:{
+    justifyContent: 'center',
+  },
 
 }));
 
@@ -46,20 +49,25 @@ const HomePageView = () => {
           </Typography>
 
           <Link className={classes.links} to={'/campuses'} >
-            <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-              All Campuses
+            <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
+            <font color= "#f8b195">All Campuses</font>
             </Button>
           </Link>
 
           <Link className={classes.links} to={'/students'} >
-            <Button variant="contained" color="primary">
-              All Students
+            <Button variant="outlined" color="warning">
+            <font color= "#f8b195">All Students</font>
             </Button>
           </Link>
+
+
         </Toolbar>
       </AppBar>
-      
-      <div className={classes.greeting}><h1>Home Page</h1></div>
+      <font color = '#f8b195'>
+      <div className={classes.greeting} ><h1>Home Page</h1></div>
+      </font>
+      <img className={classes.imgcity} src= 'https://wallpaperaccess.com/full/869.jpg'></img>
+
     </div>
   );    
 }
