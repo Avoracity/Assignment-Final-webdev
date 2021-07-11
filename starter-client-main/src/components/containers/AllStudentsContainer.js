@@ -1,7 +1,40 @@
-const AllStudentsContainer = () => {
-  return (
-    <h1>All Students View</h1>
-  );
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
+import {fetchAllStudentsThunk} from "../../store/thunks";
+import {AllStudentsView} from "../views";
+
+class AllStudentsContainer extends Component {
+  componentDidMount() {
+    this.props.fetchAllStudents();
+  }
+  render(){
+    return(
+      <AllStudentsView 
+        allStudents={this.props.allStudents}
+      />
+    );
+  }
+}
+
+// State to Props
+const mapState = (state) => {
+  return {
+    allStudents: state.allStudents,
+  };
 };
 
-export default AllStudentsContainer;
+// Dipatch to Prop
+const mapDispatch = (dispatch) => {
+  return {
+    fetchAllStudents: () =>dispatch(fetchAllStudentsThunk()),
+  };
+};
+
+// If an object was passed, do nothing
+AllStudentsContainer.propTypes = {
+  allStudents: PropTypes.array.isRequired,
+  fetchAllStudentsThunk: PropTypes.func.isRequired,
+};
+
+export default connect(mapState, mapDispatch)(AllStudentsContainer);
