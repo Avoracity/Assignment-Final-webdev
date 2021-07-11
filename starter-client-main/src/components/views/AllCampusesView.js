@@ -121,14 +121,14 @@ class AllCampusesView extends Component {
               
               <div>
                 <Link to={'/'} style={{ textDecoration: 'none' }} >
-                  <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
+                  <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
 
-                    Home
+                  <font color= "#f8b195">Home</font>
                   </Button>
                 </Link>
                 <Link to={'/students'} style={{ textDecoration: 'none' }} >
-                <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-                    All Students
+                <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
+                  <font color= "#f8b195">All Students</font>
                   </Button>
                 </Link>
               </div>

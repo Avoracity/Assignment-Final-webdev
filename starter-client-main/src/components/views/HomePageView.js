@@ -49,14 +49,14 @@ const HomePageView = () => {
           </Typography>
 
           <Link className={classes.links} to={'/campuses'} >
-            <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-              All Campuses
+            <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
+            <font color= "#f8b195">All Campuses</font>
             </Button>
           </Link>
 
           <Link className={classes.links} to={'/students'} >
-            <Button variant="contained" color="primary">
-              All Students
+            <Button variant="outlined" color="warning">
+            <font color= "#f8b195">All Students</font>
             </Button>
           </Link>
 
