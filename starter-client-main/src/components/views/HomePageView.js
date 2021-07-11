@@ -31,7 +31,10 @@ const useStyles = makeStyles(theme => ({
   },
   links:{
     textDecoration: 'none',
-  }
+  },
+  imgcity:{
+    justifyContent: 'center',
+  },
 
 }));
 
@@ -56,10 +59,15 @@ const HomePageView = () => {
               All Students
             </Button>
           </Link>
+
+
         </Toolbar>
       </AppBar>
-      
-      <div className={classes.greeting}><h1>Home Page</h1></div>
+      <font color = '#f8b195'>
+      <div className={classes.greeting} ><h1>Home Page</h1></div>
+      </font>
+      <img className={classes.imgcity} src= 'https://wallpaperaccess.com/full/869.jpg'></img>
+
     </div>
   );    
 }

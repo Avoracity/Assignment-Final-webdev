@@ -139,9 +139,9 @@ class AllCampusesView extends Component {
         <div>
           <AppBar position="static" elevation={0} style={{ backgroundColor: '#6c5b77', shadows: 'none' }}>
 
-          <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif', color: '#f8b195' }}>All Campuses</h1>
+          <h1 style={{ marginLeft: '43%', marginTop: '3%', fontFamily: 'Courier, sans-serif', color: '#f8b195' }}>All Campuses</h1>
           <Button onClick={this.startAdd}>
-            Add Campus
+            <font color='#f8b195'>Add Campus </font>
           </Button>
           </AppBar>
         </div>

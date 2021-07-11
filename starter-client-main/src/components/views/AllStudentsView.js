@@ -119,7 +119,6 @@ class AllStudentsView extends Component {
               <div>
                 <Link to={'/'} style={{ textDecoration: 'none' }} >
                   <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-
                     Home
                   </Button>
                 </Link>
@@ -136,10 +135,10 @@ class AllStudentsView extends Component {
         <div>
           <AppBar position="static" elevation={0} style={{ backgroundColor: '#6c5b77', shadows: 'none' }}>
 
-          <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif', color: '#f8b195' }}>All Students</h1>
+          <h1 style={{ marginTop: '3%', marginLeft: '43%', fontFamily: 'Courier, sans-serif', color: '#f8b195',  }}>All Students</h1>
   
                     <Button onClick={this.startSAdd}>
-                        Add Student
+                        <font color='#f8b195'>Add Student</font>
                     </Button>
                 </AppBar>
                 </div>
