@@ -23,22 +23,22 @@ const CampusView = (props) => {
   return (
     <div>
       <div>
-        <AppBar position="static" elevation={0} style={{ backgroundColor: '#11153e', shadows: 'none' }}>
+        <AppBar position="static" elevation={0} style={{ backgroundColor: '#6c5b7b', shadows: 'none' }}>
           <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Link to={'/'} style={{ textDecoration: 'none' }} >
-              <Typography variant="h6" style={{ textAlign: 'left', fontType: 'bold', fontFamily: 'Courier, sans-serif', fontSize: '35px', color: "#CDDC39" }}>
+              <Typography variant="h6" style={{ textAlign: 'left', fontType: 'bold', fontFamily: 'Courier, sans-serif', fontSize: '35px', color: "#f8b195" }}>
                 Home
               </Typography>
             </Link>
             <div>
               <Link to={'/campuses'} style={{ textDecoration: 'none' }} >
-                <Button style={{ marginRight: '10px' }}>
-                  All Campuses
+                <Button style={{ marginRight: '10px' }} variant = "outlined" color ="warning">
+                <font color= "#f8b195">All Campus</font>
                 </Button>
               </Link>
               <Link to={'/students'} style={{ textDecoration: 'none' }} >
-                <Button>
-                  All Students
+                <Button variant = "outlined" color ="warning">
+                <font color= "#f8b195">All Students</font>
                 </Button>
               </Link>
             </div>

@@ -121,14 +121,14 @@ class AllCampusesView extends Component {
               
               <div>
                 <Link to={'/'} style={{ textDecoration: 'none' }} >
-                  <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
+                  <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
 
-                    Home
+                  <font color= "#f8b195">Home</font>
                   </Button>
                 </Link>
                 <Link to={'/students'} style={{ textDecoration: 'none' }} >
-                <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
-                    All Students
+                <Button variant="outlined" color="warning" style={{marginRight: '10px'}}>
+                  <font color= "#f8b195">All Students</font>
                   </Button>
                 </Link>
               </div>
@@ -137,10 +137,13 @@ class AllCampusesView extends Component {
         </div>
 
         <div>
-          <h1 style={{ marginLeft: '20px', fontFamily: 'Courier, sans-serif', color: '#f8b195' }}>All Campuses</h1>
+          <AppBar position="static" elevation={0} style={{ backgroundColor: '#6c5b77', shadows: 'none' }}>
+
+          <h1 style={{ marginLeft: '43%', marginTop: '3%', fontFamily: 'Courier, sans-serif', color: '#f8b195' }}>All Campuses</h1>
           <Button onClick={this.startAdd}>
-            Add Campus
+            <font color='#f8b195'>Add Campus </font>
           </Button>
+          </AppBar>
         </div>
 
         <div>
